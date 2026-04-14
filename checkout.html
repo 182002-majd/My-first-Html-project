@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>إتمام الطلب | Majd Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Majd Store</h1>
+        <p>أنت على بُعد خطوة واحدة من الحصول على أناقتك!</p>
+        <nav>
+            <a href="index.html">العودة للرئيسية</a>
+        </nav>
+    </header>
+    <hr>
+
+    <main>
+        <form action="/process_order" method="POST">
+            
+            <fieldset>
+                <legend><h3>1. حساب المستخدم</h3></legend>
+                <p>
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="user_email" placeholder="example@mail.com" required autofocus>
+                </p>
+                <p>
+                    <label for="pass">كلمة المرور:</label>
+                    <input type="password" id="pass" name="user_password" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><h3>2. معلومات الشحن</h3></legend>
+                <p>
+                    <label for="full-name">الاسم الكامل:</label>
+                    <input type="text" id="full-name" name="customer_name" minlength="5" required>
+                </p>
+                <p>
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="customer_phone" placeholder="07XXXXXXXX" required>
+                </p>
+                <p>
+                    <label for="address">العنوان بالتفصيل:</label>
+                    <input type="text" id="address" name="shipping_address" placeholder="المدينة، الشارع، البناية" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><h3>3. تخصيص الطلب</h3></legend>
+                
+                <p>
+                    <strong>المقاس:</strong><br>
+                    <input type="radio" id="s" name="size" value="S"> <label for="s">S</label>
+                    <input type="radio" id="m" name="size" value="M"> <label for="m">M</label>
+                    <input type="radio" id="l" name="size" value="L"> <label for="l">L</label>
+                    <input type="radio" id="xl" name="size" value="XL" disabled> <label for="xl">XL (غير متوفر)</label>
+                </p>
+
+                <p>
+                    <label for="color">اللون المفضل للقطعة:</label>
+                    <input type="color" id="color" name="item_color" value="#000000">
+                </p>
+
+                <p>
+                    <label for="quantity">الكمية:</label>
+                    <input type="number" id="quantity" name="qty" min="1" max="5" value="1">
+                </p>
+
+                <p>
+                    <label for="delivery-speed">سرعة التوصيل المتوقعة:</label><br>
+                    <span>عادي</span> 
+                    <input type="range" id="delivery-speed" name="speed" min="1" max="3"> 
+                    <span>مستعجل</span>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend><h3>4. مراجعة نهائية</h3></legend>
+                
+                <p>
+                    <label for="currency">العملة:</label>
+                    <input type="text" id="currency" value="JOD" readonly>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="gift" name="is_gift">
+                    <label for="gift">تغليف كهدية</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="terms" name="agree" required>
+                    <label for="terms">أوافق على جميع الشروط والأحكام</label>
+                </p>
+
+                <input type="hidden" name="order_timestamp" value="2026-04-12">
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="تأكيد الطلب وشحن المنتجات">
+            <input type="reset" value="مسح كافة البيانات">
+
+            <section id="special-order">
+    <h2>📝 طلب خاص وتحديد موعد</h2>
+    <form action="#" method="post" novalidate>
+        
+        <label>رابط منتج أعجبك (URL):</label><br>
+        <input type="url" name="link" placeholder="https://example.com"><br><br>
+
+        <label>اختر القسم والمقاس (Select):</label><br>
+        <select name="category">
+            <option value="none">-- اختر من القائمة --</option>
+            <option value="mens">رجالي - XL</option>
+            <option value="womens">نسائي - M</option>
+            <option value="kids">أطفال - 12</option>
+        </select><br><br>
+
+        <label>مدينة التوصيل (Datalist):</label><br>
+        <input list="cities" name="city" placeholder="اكتب مدينتك...">
+        <datalist id="cities">
+            <option value="عمان">
+            <option value="إربد">
+            <option value="الزرقاء">
+        </datalist><br><br>
+
+        <label>الوقت المفضل للتواصل (Time):</label><br>
+        <input type="time" name="contact-time"><br><br>
+
+        <label>ارفع صورة الموديل (File):</label><br>
+        <input type="file" name="upload-img"><br><br>
+
+        <label>ملاحظات إضافية (Textarea):</label><br>
+        <textarea name="notes" rows="4" cols="40" placeholder="اكتب أي تفاصيل أخرى هنا..."></textarea><br><br>
+
+        <button type="submit">إرسال الطلب</button>
+    </form>
+</section>
+
+           
+        </form>
+    </main>
+
+    <hr>
+                
+            <section id="testimonials">
+    <hr>
+    <h2>💬 آراء العملاء</h2>
+    <blockquote>
+        <q>أفضل متجر لمنتجات الماستر كوبي، الجودة رائعة جداً</q>
+        <br>
+        <span>بواسطة العميل: <bdi>أحمد</bdi></span>
+    </blockquote>
+</section>       
+    <footer>
+        <p>&copy; 2026 جميع الحقوق محفوظة لمتجر مجد</p>
+    </footer>
+
+</body>
+</html>
+

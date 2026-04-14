@@ -5,7 +5,7 @@
   <meta charset="UTF-8"/>
   <meta name="copyright" content="جميع الحقوق محفوظة لدى Majd Store"/>
   <meta name="author" content="Majd Sameeh"/>
-  <meta name="revised" content="Thursday,April,9th,2026"/>
+  <meta name="revised" content="Thursday,April,14th,2026"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title> Majd Store</title>
   <meta name="description" content="اكتشف أحدث صيحات الموضة في متجر مجد. تشكيلة واسعة من الملابس الرجالية والنسائية، ملابس الأطفال، والأحذية بجميع المقاسات، مع قسم خاص لمنتجات الماستر كوبي بجودة عالية وأسعار منافسة"/>
@@ -31,23 +31,42 @@
     
     <h1>MAJD STORE</h1>
       </div>
-</header>
+      
+      <section id="search-section">
+    <h3>🔍 ابحث في المتجر:</h3>
+    <input type="search" name="q" placeholder="ابحث عن منتج...">
+    <button type="button">بحث</button>
+        </hr>
+</section>
 
+</header>
   
   <nav>
     <b>انتقل إلى: </b>
+    <a href="login.html">تسجيل الدخول / إتمام الطلب</a>
     <a href="#mens-wear">القسم الرجالي</a> | 
     <a href="#womens-wear">القسم النسائي</a> | 
     <a href="#kids-wear">قسم الأطفال</a> | 
     <a href="#shoes-bags">الأحذية والحقائب</a> | 
-    <a href="#master-copy-section">ركن الـ Master Copy</a>
+    <a href="#master-copy-section">قسم الـ Master Copy</a>
+     <a href="#how-to-order">كيفية الطلب  </a>
+    <a href="checkout.html" id="cart-link" style="position: relative; margin-right: 20px;">
+    <span>🛒</span>
+    <b>السلة</b>
+    <span style="background: red; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px; position: absolute; top: -10px; left: -10px;">0</span>
+</a>
+
 </nav>
 <hr>
 
   
   <main>
+    
     <div>
   <p class ="about-store"> اكتشف أرقى التصاميم العالمية والمحلية في <u> متجر مجد</u> حيث نجمع لك بين الجودة العالية وأحدث صيحات الموضة لتناسب جميع أفراد العائلة  </p>
+       <blockquote>
+          <q>أفضل تجربة تسوق إلكتروني سوف تمر بها، الجودة تفوق التوقعات</q>
+       </blockquote>
   <p class ="master-copy"> نقدم لكم قسماً خاصاً بمنتجات الماستر كوبي المختارة بعناية والتي تمنحكم الفخامة والشكل الأصلي الذي تطمحون إليه بأسعار تنافسية جداً  </p>
   <p hidden>هذه الصفحة تجريبية</p>
     </div>
@@ -64,6 +83,11 @@
         <li>ملابس رياضية مريحة.</li>
     </ul>
     <p><strong>العرض الحالي:</strong> خصم 20% على جميع القمصان الرسمية.</p>
+       <p><a href="checkout.html">🛒 اضغط هنا لتسجيل الدخول وتثبيت طلبك</a></p>
+      
+    <button type="button" onclick="alert('تمت الإضافة للسلة!')" style="background-color: black; color: white; padding: 10px; cursor: pointer;">
+        ➕ أضف إلى السلة
+    </button>
 </section>
 
     <section id="womens-wear">
@@ -75,8 +99,12 @@
         <li>عباءات عصرية وتصاميم خاصة.</li>
     </ul>
     <p><strong>العرض الحالي:</strong> اشتري قطعتين واحصلي على الثالثة <b>مجاناً!</b></p>
-</section>
-
+       <p><a href="checkout.html">🛒 اضغط هنا لتسجيل الدخول وتثبيت طلبك</a></p>
+       <button type="button" onclick="alert('تمت الإضافة للسلة!')" style="background-color: black; color: white; padding: 10px; cursor: pointer;">
+        ➕ أضف إلى السلة
+    </button>
+    </section>
+      
     <section id="kids-wear">
     <h2>قسم الأطفال</h2>
     <p>ملابس مريحة وآمنة لأطفالكم بتصاميم مبهجة وعملية.</p>
@@ -86,7 +114,13 @@
         <li>ملابس مدرسية متينة.</li>
     </ul>
     <p><strong>خصم خاص:</strong> تنزيلات تصل إلى 50% على ملابس المواليد.</p>
-</section>
+   <p><a href="checkout.html">🛒 اضغط هنا لتسجيل الدخول وتثبيت طلبك</a></p>
+       <button type="button" onclick="alert('تمت الإضافة للسلة!')" style="background-color: black; color: white; padding: 10px; cursor: pointer;">
+        ➕ أضف إلى السلة
+    </button>
+    </section>
+      
+
 
     <section id="shoes-bags">
     <h2>الأحذية والحقائب</h2>
@@ -97,7 +131,12 @@
         <li>حقائب يد نسائية وحقائب ظهر.</li>
     </ul>
     <p><strong>ميزة إضافية:</strong> شحن مجاني لأي طلب يتضمن حذاء وحقيبة.</p>
-</section>
+ <p><a href="checkout.html">🛒 اضغط هنا لتسجيل الدخول وتثبيت طلبك</a></p>
+       <button type="button" onclick="alert('تمت الإضافة للسلة!')" style="background-color: black; color: white; padding: 10px; cursor: pointer;">
+        ➕ أضف إلى السلة
+    </button>
+    </section>
+
 
     <section id="master-copy-section">
     <h2>قسم الـ Master Copy</h2>
@@ -108,8 +147,13 @@
         <li>إكسسوارات ومحافظ جلدية.</li>
     </ul>
     <p style="color: red;"><strong>تنبيه:</strong> الكميات محدودة جداً لضمان التميز.</p>
-</section>
-    </div>
+ <p><a href="checkout.html">🛒 اضغط هنا لتسجيل الدخول وتثبيت طلبك</a></p>
+       <button type="button" onclick="alert('تمت الإضافة للسلة!')" style="background-color: black; color: white; padding: 10px; cursor: pointer;">
+        ➕ أضف إلى السلة
+    </button>
+    </section>
+      
+      </div>
       <section id="size-guide">
       <hr>
       <h2>📏 دليل المقاسات</h2>
@@ -188,15 +232,30 @@
   </section>
 
     
+
   <section id="how-to-order">
       <h2>تفاصيل الشراء:</h2>
       <ol class="order-steps">
           <li>اختر القطعة والمقاس المناسب لك (بناءً على الجدول أعلاه).</li>
           <li>أضف المنتجات إلى سلة المشتريات.</li>
           <li>أدخل بيانات التوصيل بدقة.</li>
-          <li>تأكد من الطلب واضغط على <i>إتمام الشراء</i>.</li>
       </ol>
-  </section>
+    <p style="background-color: #fff3cd; padding: 15px; border-right: 5px solid #ffeeba;">
+        <strong>💡 ملاحظة هامة:</strong> 
+        لتثبيت طلبك واختيار المقاسات والألوان، يرجى الذهاب إلى 
+        <a href="checkout.html" style="color: #856404; font-weight: bold;">صفحة تسجيل الدخول وإتمام الطلب من هنا</a>.
+    </p>
+</section>
+          
+          <section id="extra-info">
+    <hr>
+    <p>استخدم كود الخصم التالي للحصول على 10%:</p>
+    <pre>
+<code>DISCOUNT_MAJD_2026</code>
+    </pre>
+
+    <p>سياسة الاسترجاع متاحة لجميع <wbr>الزبائن في المحافظات البعيدة.</p>
+</section>
 
 </main>
 
