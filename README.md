@@ -7,19 +7,28 @@
 ​## Features & Milestones
 
 ​[x] Semantic HTML5: Built using SEO-friendly tags (header, nav, main, section, footer) for better accessibility.
+
 ​[x] Professional CSS Styling: * Modern UI: Clean and attractive interface with a custom color palette.
+
 ​Responsive Design: Fully optimized for Mobiles, Tablets, and Desktops using Media Queries.
+
 ​Layout: Implemented CSS Grid for product displays and Flexbox for navigation and headers.
+
 ​Animations: Added smooth hover effects and transitions for interactive elements.
+
 ​[x] Multi-page Navigation: Fully linked Homepage and a comprehensive Checkout page.
+
 ​[x] Advanced Form Integration: A structured checkout process including various input types (tel, email, range, color, etc.).
 ​[ ] JavaScript Logic: (Upcoming) Adding interactivity, shopping cart functionality, and form validation.
 
 ​🔗 Project Structure
 
 ├── index.html       # Main landing page (Store Front)
+
 ├── checkout.html    # Checkout/Payment & Special orders page
+
 ├── style.css        # Professional stylesheet (Responsive & Modern)
+
 ├── assets/          # Images and media files
 
 💡 Technical Highlights
