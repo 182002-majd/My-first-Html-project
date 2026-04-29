@@ -16,12 +16,14 @@
 ​[ ] JavaScript Logic: (Upcoming) Adding interactivity, shopping cart functionality, and form validation.
 
 ​🔗 Project Structure
+
 ├── index.html       # Main landing page (Store Front)
 ├── checkout.html    # Checkout/Payment & Special orders page
 ├── style.css        # Professional stylesheet (Responsive & Modern)
 ├── assets/          # Images and media files
 
 💡 Technical Highlights
+
 ​Mobile First: The CSS is designed to be fluid, ensuring the store looks great on all screen sizes.
 ​User Experience: Includes a size guide, shipping information tables, and customer testimonials.
 ​Organization: Clean and commented CSS code for better maintainability.
